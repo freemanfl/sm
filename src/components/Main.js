@@ -11,7 +11,7 @@ const Main = () => {
         <Hero />
         <About />
         <Work />
-        <Contact />
+        
     </main>
   )
 }
