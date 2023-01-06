@@ -26,7 +26,7 @@ const About = () => {
                           </ul>
                     </div>
                     
-                    <div className="group relative w-2/4 rounded-md h-4/6 ">
+                    <div className="group relative w-2/5 rounded-md h-4/6 ">
                       <div className="transition duration-150 linear group-hover:-translate-y-5 group-hover:-translate-x-5  absolute w-full h-full  border-2 border-sec rounded-md top-10 left-10"></div>
                       <img src={Photo} alt='photo' className="rounded-md absolute w-full h-full transition linear bg-im"></img>
                     </div>
