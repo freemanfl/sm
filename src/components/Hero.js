@@ -1,13 +1,23 @@
 import React from 'react'
+import Typewriter from 'typewriter-effect';
+import DashedFlower from '../images/dashed-flower.svg'
 
 const Hero = () => {
   return (
-    <section className='w-full space-y-4 h-screen flex flex-col items-start justify-center '>
-        <h1 className='text-xl text-sec'>Hi, my name is</h1>
-        <h1 className='md:text-7xl text-5xl font-bold text-hone'>Shira Green</h1>
-        <h1 className='md:text-7xl text-5xl font-bold text-htwo'>I build things for the web.</h1>
-        <p className='text-md text-htwo max-w-screen-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate v</p>
-        <button className='border hover:bg-greenTint border-sec p-4 rounded-md text-sec'>Check out my something!</button>
+    <section className='hero relative h-screen flex flex-col items-start justify-center leading-[96px] overflow-hidden'>
+        <h1 className='text-[80px] text-black font-bd font '>Hi,</h1>
+        <h1 className='text-[80px] text-black font-bd font '>I'm Shira and I'm a</h1>
+
+        <Typewriter 
+            className='text-[80px] text-black font-bd font-bold green-grad'
+            options={{
+                strings: ['Product', 'Experience', '"I need it ASAP"', 'Solution'],
+                autoStart: true,
+                loop: true,
+            }}
+            />
+        <h1 className='text-[80px] text-black font-bd font '>designer</h1>
+        <img className='absolute left-64 ' src={DashedFlower} alt="flower" />
     </section>
   )
 }

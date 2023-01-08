@@ -5,17 +5,24 @@ module.exports = {
     extend: {
       colors: {
         prim: '#0A192F',
-        sec: '#5FF1D0',
+        sec: '#38C89A',
         text: '#4A5670',
         hone: '#CCD6F6',
         htwo: '#7D87A4',
         bgTrans: 'rgba(9, 24, 45, 0.8)',
         greenTint: 'rgba(100,255,218,0.1)',
         bgCard: '#112240',
+        grey2: ['#D8D6D6']
       },
       aspectRatio: {
-        '3/4': '3 / 4',
+        'video': '16 / 6',
       },
+      fontFamily: {
+        'mon': ['Montserrat', 'system-ui'],
+        'serif': ['ui-serif', 'Georgia' ],
+        'bd': ['Blacker Display'],
+        
+      }
     },
   },
   plugins: [],

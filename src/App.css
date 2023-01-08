@@ -2,65 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-.hex:before {
-    content: " ";
-    width: 0; height: 0;
-    border-bottom: 30px solid #fff;
-    border-left: 52px solid transparent;
-    border-right: 52px solid transparent;
+.App {
+
+
+}
+
+.Typewriter {
+    font-size: 72px;
+    background: linear-gradient(45deg, #006859, #159B7B, #46D29E, #76E7A1, #A1DA75);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.tab-active::after {
+    content: url('./images/active-flower.svg');
     position: absolute;
-    top: -30px;
+    right: -20px;
+    line-height: 1rem;
+    animation: rotating 12s linear infinite;
 }
 
-.hex {
-    margin-top: 30px;
-    width: 104px;
-    height: 60px;
-    background-color: #fff;
-    position: relative;
+.tab-active {
+    font-weight: 700;
+    display: flex;
+   
 }
 
-.hex:after {
-    content: "";
-    width: 0;
-    position: absolute;
-    bottom: -30px;
-    border-top: 30px solid #fff;
-    border-left: 52px solid transparent;
-    border-right: 52px solid transparent;
+.project:nth-of-type(even) {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+  }
+
+  .project:nth-of-type(even) img {
+    transform: translateX(-12rem);
+  }
+
+  .project:nth-of-type(even) .project-content {
+    align-items: flex-end;
+  }
+
+  .project:nth-of-type(even) .project-content p {
+    text-align: end;
+  }
+
+ .about-container {
+    width: 98vw;
+ }
+
+ @keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-.hex2:before {
-  content: " ";
-    width: 0; height: 0;
-    border-bottom: 30px solid #000;
-    border-left: 52px solid transparent;
-    border-right: 54px solid transparent;
-    position: absolute;
-    top: -30px;
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-.hex2 {
-    margin-top: 30px;
-    width: 106px;
-    height: 62px;
-    background-color: #000;
-    position: relative;
+.hero {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 0.5s ease-out 0s 1 slideInFromLeft;
+
 }
 
-.hex2:after {
-    content: "";
-    width: 0;
-    position: absolute;
-    bottom: -32px;
-    border-top: 32px solid #000;
-    border-left: 54px solid transparent;
-    border-right: 52px solid transparent;
-}
+.nav {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 0.5s ease-out 0s 1 slideInFromTop;
 
-.photo {
-    transform-style:preserve-3d;
-}
-.photo-child {
-    transform: translateZ(-10px);
 }
