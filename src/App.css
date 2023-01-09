@@ -44,7 +44,7 @@
   }
 
   .project:nth-of-type(even) img {
-    transform: translateX(-12rem);
+    transform: translateX(-35%);
   }
 
   .project:nth-of-type(even) .project-content {

@@ -10,15 +10,14 @@ import Tabs from './components/Tabs';
 
 function App() {
   return (
-    <div className="App w-5/6  md:w-4/6 flex justify-center ">
-       <div className="w-full h-full flex flex-col items-center">
+    <div className="App w-full px-4 flex flex-col  ">
+       
          <Navbar />
          <Hero />
          <Tabs />
          <About />
-         <Contact />
-         <Footer />
-       </div>
+        <Contact />
+        <Footer />
         
     </div>
   );

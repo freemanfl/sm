@@ -8,8 +8,8 @@ const Navbar = () => {
  
 
   return (
-   <nav className="nav flex bg-red-50 sticky justify-between top-0 z-10 w-full">
-      <div className="flex space-x-2">
+   <nav className="nav flex flex-row sticky justify-between bg-white items-center top-0 z-10 ">
+      <div className="flex space-x-2 ">
         <img src={Logo} alt="logo" className='cursor-pointer' />
         <div className="title">
             <h1 className='font-mon text-base font-bold text-white'>.</h1>
@@ -17,11 +17,12 @@ const Navbar = () => {
             <h1 className='font-mon text-base font-bold cursor-pointer'>GREEN</h1>
         </div>
       </div>
-      <ul className='flex items-center space-x-10'>
+      <ul className='hidden md:flex items-center space-x-10'>
         <li className='font-mon text-base font-normal cursor-pointer'>WORK</li>
         <li className='font-mon text-base font-normal cursor-pointer'>ABOUT</li>
         <li className='font-mon text-base font-normal cursor-pointer'>CONTACT</li>
       </ul>
+      <div className="md:hidden w-12 h-12 bg-black"></div>
    </nav>
   )
 }

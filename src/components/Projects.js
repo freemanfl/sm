@@ -40,7 +40,7 @@ const Projects = () => {
     const imgUrl = '../images/laptop.svg';
 
   return (
-    <div className='projects space-y-10 flex flex-col items-start w-full h-full'>
+    <div className='projects space-y-10 flex flex-col w-full items-start '>
        {projects.map((project) => <Project key={project.title} bg={project.bg} title={project.title} text={project.text} imgUrl={project.imgUrl} link={project.link} />)}
     </div>
   )
