@@ -15,7 +15,7 @@ module.exports = {
         grey2: ['#D8D6D6']
       },
       aspectRatio: {
-        'video': '16 / 6',
+        'video': '16 / 9 ',
       },
       fontFamily: {
         'mon': ['Montserrat', 'system-ui'],

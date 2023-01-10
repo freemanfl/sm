@@ -5,21 +5,21 @@ const Projects = () => {
 
     const projects = useMemo(()=>  [
         {
-            title: 'Octopus.Health',
+            title: 'Octopus.Healths',
             text: 'Solution for chronically ill patients that needs to smth smth',
             bg: 'red',
             imgUrl: '../images/laptop.svg',
             link: '#69B1E5',
         },
         {
-            title: 'Octopus.Health',
+            title: 'Octopus.Healtha',
             text: 'Solution for chronically ill patients that needs to smth smth',
             bg: '#69B1E5',
             imgUrl: '../images/laptop2.svg',
             link: '#',
         },
         {
-            title: 'Octopus.Health',
+            title: 'Octopus.Healthd',
             text: 'Solution for chronically ill patients that needs to smth smth',
             bg: '#69B1E5',
             imgUrl: '../images/laptop.svg',
@@ -27,7 +27,7 @@ const Projects = () => {
         
         }, 
         {
-            title: 'Octopus.Health',
+            title: 'Octopus.Healthj',
             text: 'Solution for chronically ill patients that needs to smth smth',
             bg: '#69B1E5',
             imgUrl: '../images/laptop.svg',

@@ -4,7 +4,7 @@ import DashedFlower from '../images/dashed-flower.svg'
 
 const Hero = () => {
   return (
-    <section className='hero relative h-[95vh] flex flex-col items-start justify-center leading-[96px] overflow-hidden'>
+    <section className='hero relative h-[88vh] flex flex-col items-start justify-center leading-[96px] overflow-hidden'>
         <h1 className='text-7xl text-black font-bd font '>Hi,</h1>
         <h1 className='text-7xl text-black font-bd font '>I'm Shira and I'm a</h1>
 

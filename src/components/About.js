@@ -4,7 +4,7 @@ import about2 from '../images/about2.svg'
 
 const About = () => {
   return (
-    <section className=' h-[750px]  flex flex- bg-[#D8D6D61A] '>
+    <section id='about' className=' h-[750px]  flex flex- bg-[#D8D6D61A] '>
         <div className='about w-full  flex flex-col h-full justify-center  space-y-6 items-start'>
           <h1 className='relative font-mon text-[16px] md:text-[27px] text-grey2 cursor-pointer font-bold'>ABOUT</h1>
           <div className='flex flex-col md:flex-row w-full space-y-2'>
