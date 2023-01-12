@@ -12,6 +12,13 @@ const Projects = () => {
             link: '#69B1E5',
         },
         {
+            title: 'Octopus.Healths',
+            text: 'Solution for chronically ill patients that needs to smth smth',
+            bg: 'red',
+            imgUrl: '../images/laptop.svg',
+            link: '#69B1E5',
+        },
+        {
             title: 'Octopus.Healtha',
             text: 'Solution for chronically ill patients that needs to smth smth',
             bg: '#69B1E5',
