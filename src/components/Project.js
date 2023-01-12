@@ -7,7 +7,7 @@ const Project = ({bg, imgUrl, link, title, text}) => {
         <div className="project-content w-full flex flex-col items-start justify-center   space-y-2 lg:space-y-14">
             <h1 className='text-xs md:text-lg font-mon text-white'>{title}</h1>
             <p className='text-xs md:text-lg  font-bold font-mon text-white lg:w-2/3 xl:w-2/3'>{text}</p>
-            <a href={link} className='leading-5 border-b border-white text-white'>Read more</a>
+            <a href={link} className='leading-5 border-b font-mon text-base border-white text-white'>Read more &#8594;</a>
         </div>
         <img src={imgUrl} alt="laptop"className='max-w-[485px] w-36 md:w-64 translate-x-1/3 lg:w- 2xl:w-full  ' />
     </div>

@@ -1,20 +1,20 @@
 import {useMemo, useState} from 'react'
 import Project from './Project'
 
-const Projects = () => {
+const UiWorks = () => {
 
-    const projects = useMemo(()=>  [
+    const uiWorks = useMemo(()=>  [
         {
             title: 'Octopus.Healths',
             text: 'Solution for chronically ill patients that needs to smth smth',
-            bg: 'red',
+            bg: 'blue',
             imgUrl: '../images/laptop.svg',
             link: '#69B1E5',
         },
         {
             title: 'Octopus.Healtha',
             text: 'Solution for chronically ill patients that needs to smth smth',
-            bg: '#69B1E5',
+            bg: 'green',
             imgUrl: '../images/laptop2.svg',
             link: '#',
         },
@@ -35,14 +35,11 @@ const Projects = () => {
         }
        ]
        );  
-
- 
-
   return (
     <div className='projects space-y-16 flex flex-col w-full items-start '>
-       {projects.map((project) => <Project key={project.title} bg={project.bg} title={project.title} text={project.text} imgUrl={project.imgUrl} link={project.link} />)}
+        {uiWorks.map((project) => <Project key={project.title} bg={project.bg} title={project.title} text={project.text} imgUrl={project.imgUrl} link={project.link} />)}
     </div>
   )
 }
 
-export default Projects
+export default UiWorks

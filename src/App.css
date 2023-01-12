@@ -12,6 +12,8 @@
     background: linear-gradient(45deg, #006859, #159B7B, #46D29E, #76E7A1, #A1DA75);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: 'Blacker Display';
+    font-weight: 700;
 }
 
 
@@ -36,13 +38,29 @@
 
 .tab-active {
     font-weight: 700;
-    
+    color: #323232;
    
 }
+.shira-flower::after {
+  content: url('./images/hero-flower.svg');
+  position: absolute;
+  right: -15px;
+  top: 5px;
+  line-height: 1rem;
+  animation: rotating 12s linear infinite;
+  z-index: -1;
+}
 
+.project {
+  animation: 0.5s ease-in-out 0s 1 fadeInLeft;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
 .project:nth-of-type(even) {
     flex-direction: row-reverse;
     align-self: flex-end;
+    animation: 0.5s ease-in-out 0s 1 fadeInRight;
+    animation-fill-mode: forwards;
   }
 
   .project:nth-of-type(even) img {
@@ -57,38 +75,68 @@
     text-align: end;
   }
 
- .about-container {
-    width: 98vw;
- }
 
- @keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+
+ @keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }
 
-@keyframes slideInFromTop {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, 15%, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform: translate3d(-10%, 0, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		transform: translate3d(10%, 0, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
 
 .hero {  
   /* This section calls the slideInFromLeft animation we defined above */
-  animation: 0.7s ease-in-out 0s 1 slideInFromLeft;
+  animation: 0.5s ease-in-out 0s 1 fadeInUp;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+  line-height: 96px;
 
 }
 
 .nav {  
   /* This section calls the slideInFromLeft animation we defined above */
-  animation: 0.7s ease-in-out 0s 1 slideInFromTop;
-
+  animation: 0.3s ease-in-out 0s 1 fadeInDown;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .nav a, .tabs a {
@@ -96,7 +144,7 @@
   padding-bottom: 12px;
 }
 
-.nav a::before, .tabs a::before {
+.nav a::before, .tabs a::before  {
     content: '';
     position: absolute;
     width: 100%;
@@ -110,7 +158,28 @@
     transition: transform .3s ease-in-out;
   }
 
-  .nav a:hover::before, .tabs a:hover::before {
+  .nav a:hover::before, .tabs a:hover::before, .contact a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
+}
+
+
+.contact a {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+
+.contact a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  
+  background-color: #38C89A;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
 }

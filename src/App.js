@@ -10,13 +10,13 @@ import Tabs from './components/Tabs';
 
 function App() {
   return (
-    <div className="App w-5/6 md:w-3/5 flex flex-col scroll-smooth ">
+    <div className="App w-5/6 md:w-3/5 flex flex-col items-start scroll-smooth ">
        
          <Navbar />
          <Hero />
          <Tabs />
          <About />
-        <Contact />
+          <Contact />
         <Footer />
         
     </div>

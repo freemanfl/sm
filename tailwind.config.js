@@ -12,7 +12,10 @@ module.exports = {
         bgTrans: 'rgba(9, 24, 45, 0.8)',
         greenTint: 'rgba(100,255,218,0.1)',
         bgCard: '#112240',
-        grey2: ['#D8D6D6']
+        grey2: '#D8D6D6',
+        logoBlack: '#323232',
+        aboutBg: 'rgba(216, 214, 214, 0.2)',
+
       },
       aspectRatio: {
         'video': '16 / 9 ',
