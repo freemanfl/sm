@@ -6,13 +6,13 @@ const Projects = () => {
     const projects = useMemo(()=>  [
         {
             title: 'Redefine Crypto',
-            text: 'Solution for chronically ill patients that needs to smth smth',
+            text: 'Cybersecurity solution for DeFi investors and traders',
             bg: 'red',
             imgUrl: '../images/laptop.svg',
             link: '#69B1E5',
         },
         {
-            title: 'Octopus.Healths',
+            title: 'Octopus.Health',
             text: 'Solution for chronically ill patients that needs to smth smth',
             bg: 'red',
             imgUrl: '../images/laptop.svg',
