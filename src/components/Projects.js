@@ -5,7 +5,7 @@ const Projects = () => {
 
     const projects = useMemo(()=>  [
         {
-            title: 'Octopus.Healths',
+            title: 'Redefine Crypto',
             text: 'Solution for chronically ill patients that needs to smth smth',
             bg: 'red',
             imgUrl: '../images/laptop.svg',
